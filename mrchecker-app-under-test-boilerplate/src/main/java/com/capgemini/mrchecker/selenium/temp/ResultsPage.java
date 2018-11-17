@@ -1,3 +1,4 @@
+package com.capgemini.mrchecker.selenium.temp;
 import org.openqa.selenium.By;
 
 import com.capgemini.mrchecker.selenium.core.BasePage;

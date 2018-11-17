@@ -1,8 +1,12 @@
+package com.capgemini.mrchecker.selenium.temp;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import com.capgemini.mrchecker.selenium.temp.MainPage;
+import com.capgemini.mrchecker.selenium.temp.ResultsPage;
 
 public class ResultsPageTest {
 	private static MainPage	mainPage;

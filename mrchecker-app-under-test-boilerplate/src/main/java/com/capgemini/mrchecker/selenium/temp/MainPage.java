@@ -1,3 +1,5 @@
+package com.capgemini.mrchecker.selenium.temp;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -8,6 +10,9 @@ public class MainPage extends BasePage {
 	private static final By	selectorSelectWomen		= By.cssSelector("ul.sf-menu>li:nth-child(1)");
 	private static final By	selectorSelectDresses	= By.cssSelector("ul.sf-menu>li:nth-child(2)");
 	private static final By	selectorSelectTshirts	= By.cssSelector("ul.sf-menu>li:nth-child(3)");
+	
+	// .add_to_compare[data-id-product="3"]
+	// td.product-3
 	
 	@Override
 	public boolean isLoaded() {
