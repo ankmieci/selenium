@@ -1,0 +1,55 @@
+# Project specific #
+####################
+**/test-output/
+**/target/
+**/.allure/
+**/allure-results/
+**/lib/
+**/logs/
+**/.metadata/
+**/*.orig
+**/reports/
+**/.classpath
+**/.idea/
+**/*.iml
+**/.project
+**/secretData
+**/.settings/
+**/ajcore.*
+**/src/bin/
+~*.docx
+**/chromedriver/
+**/geckodriver/
+**/allure-framework-modules
+**/allure-app-under-test
+
+# Compiled source #
+###################
+**/*.com
+**/*.class
+**/*.dll
+**/*.exe
+**/*.o
+**/*.so
+
+# Exclude #
+##############
+!mrchecker-app-under-test/lib/**/*
+
+# Packages #
+############
+**/*.7z
+**/*.dmg
+**/*.gz
+**/*.iso
+**/*.jar
+**/*.rar
+**/*.tar
+**/*.zip
+
+# Logs and databases #
+######################
+**/*.orig
+**/*.log
+**/*.sql
+**/*.sqlite
