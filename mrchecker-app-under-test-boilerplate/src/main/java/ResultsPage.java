@@ -4,10 +4,11 @@ import com.capgemini.mrchecker.selenium.core.BasePage;
 
 public class ResultsPage extends BasePage {
 	
-	public static final By	selectorSizeS			= By.cssSelector("#layered_id_attribute_group_1");
+	public static final By	selectorSizeM			= By.cssSelector("#layered_id_attribute_group_2");
 	public static final By	selectorColorOrange		= By.cssSelector("#layered_id_attribute_group_13");
 	public static final By	selectorStyleGirly		= By.cssSelector("#layered_id_feature_13");
 	public static final By	selectorConditionNew	= By.cssSelector("#layered_condition_new");
+	public static final By	selectorProduct			= By.cssSelector("div.right-block a.product-name");
 	
 	@Override
 	public boolean isLoaded() {
@@ -27,8 +28,8 @@ public class ResultsPage extends BasePage {
 		return null;
 	}
 	
-	public void clickSizeS() {
-		getDriver().findElementDynamic(selectorSizeS)
+	public void clickSizeM() {
+		getDriver().findElementDynamic(selectorSizeM)
 				.click();
 	}
 	
@@ -48,6 +49,9 @@ public class ResultsPage extends BasePage {
 	}
 	
 	public ProductPage clickProduct() {
+		getDriver().findElementDynamic(selectorProduct)
+				.click();
+		
 		return new ProductPage();
 	}
 	
