@@ -9,6 +9,11 @@ public class MainPage extends BasePage {
 	private static final By	selectorSelectDresses	= By.cssSelector("ul.sf-menu>li:nth-child(2)");
 	private static final By	selectorSelectTshirts	= By.cssSelector("ul.sf-menu>li:nth-child(3)");
 	
+	/**
+	 * 1.zrobic to
+	 * 2. a potem to
+	 */
+	
 	@Override
 	public boolean isLoaded() {
 		// TASK Auto-generated method stub
