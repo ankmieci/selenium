@@ -7,6 +7,7 @@ import org.junit.Test;
 public class ResultsPageTest {
 	private static MainPage	mainPage;
 	private ResultsPage		resultsPage;
+	private ProductPage		productPage;
 	
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
@@ -34,6 +35,8 @@ public class ResultsPageTest {
 		resultsPage.clickColorOrange();
 		resultsPage.clickConditionNew();
 		resultsPage.clickStyleGirly();
+		
+		productPage = resultsPage.clickProduct();
 	}
 	
 }

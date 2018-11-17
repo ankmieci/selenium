@@ -47,6 +47,8 @@ public class ResultsPage extends BasePage {
 				.click();
 	}
 	
-	// public ProductPage click
+	public ProductPage clickProduct() {
+		return new ProductPage();
+	}
 	
 }
