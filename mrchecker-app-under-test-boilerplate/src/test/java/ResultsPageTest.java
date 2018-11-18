@@ -4,6 +4,9 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import com.capgemini.mrchecker.selenium.store.MainPage;
+import com.capgemini.mrchecker.selenium.store.ResultsPage;
+
 public class ResultsPageTest {
 	private static MainPage	mainPage;
 	private ResultsPage		resultsPage;

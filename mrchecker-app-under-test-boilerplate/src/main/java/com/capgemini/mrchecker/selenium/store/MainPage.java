@@ -1,3 +1,4 @@
+package com.capgemini.mrchecker.selenium.store;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 

@@ -1,3 +1,5 @@
+package com.capgemini.mrchecker.selenium.store;
+
 import org.openqa.selenium.By;
 
 import com.capgemini.mrchecker.selenium.core.BasePage;
@@ -31,22 +33,5 @@ public class ResultsPage extends BasePage {
 		getDriver().findElementDynamic(selectorSizeS)
 				.click();
 	}
-	
-	public void clickColorOrange() {
-		getDriver().findElementDynamic(selectorColorOrange)
-				.click();
-	}
-	
-	public void clickStyleGirly() {
-		getDriver().findElementDynamic(selectorStyleGirly)
-				.click();
-	}
-	
-	public void clickConditionNew() {
-		getDriver().findElementDynamic(selectorConditionNew)
-				.click();
-	}
-	
-	// public ProductPage click
 	
 }

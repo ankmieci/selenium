@@ -1,7 +1,8 @@
-package com.capgemini.mrchecker.selenium;
+package com.capgemini.mrchecker.selenium.store;
 
 import org.junit.Test;
 
+import com.capgemini.mrchecker.selenium.MainPage;
 import com.capgemini.mrchecker.test.core.BaseTest;
 
 public class MainPageTest extends BaseTest {
