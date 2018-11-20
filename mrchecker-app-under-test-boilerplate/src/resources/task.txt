@@ -1,2 +1,20 @@
 1 TODO
-2 Pozdro
+http://store.demoqa.com/ - str do testowania
+Branch feature/demoqa
+
+I.
+1. Search 2 elementy(nie random)
+2. Dodaj do koszyka
+3. Wejdz do koszyka 
+4. Weryfikacja czy w koszyku sa te elementy
+  - nazwa
+  - ilosc
+
+Napisac wszystko od nowa
+Wszystkie metody musza byc zawarte, i wpisane do testu, nawet jesli nie sa zaimplementowane
+Mozna pisac w komentarzu co robia
+
+Czas do 10.25 - trzeba wypuszowac!!!!
+
+II. Po pierwszym puszu
+Zrobic data driven
