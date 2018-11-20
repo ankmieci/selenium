@@ -1,4 +1,5 @@
 package com.capgemini.mrchecker.selenium.store;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -6,33 +7,44 @@ import com.capgemini.mrchecker.selenium.core.BasePage;
 
 public class MainPage extends BasePage {
 	
-	private static final By	selectorSelectWomen		= By.cssSelector("ul.sf-menu>li:nth-child(1)");
-	private static final By	selectorSelectDresses	= By.cssSelector("ul.sf-menu>li:nth-child(2)");
-	private static final By	selectorSelectTshirts	= By.cssSelector("ul.sf-menu>li:nth-child(3)");
+	private static final By	selectorProductSearch	= By.cssSelector("input.search");
+	private static final By	selectorCart			= By.cssSelector("a.cart_icon");
 	
 	@Override
 	public boolean isLoaded() {
-		// TASK Auto-generated method stub
-		return false;
+		return getDriver().getTitle()
+				.equals(pageTitle());
 	}
 	
 	@Override
 	public void load() {
-		getDriver().get("http://automationpractice.com/index.php");
+		getDriver().get("http://store.demoqa.com/");
 		
 	}
 	
 	@Override
 	public String pageTitle() {
-		// TASK Auto-generated method stub
-		return null;
+		return "ONLINE STORE | Toolsqa Dummy Test site";
 	}
 	
-	public ResultsPage openDresses() {
-		WebElement webElement = getDriver().findElementDynamic(selectorSelectDresses);
-		webElement.click();
+	public ResultsPage searchProduct(String searchedProduct) {
+		WebElement webElement = getDriver().findElementDynamic(selectorProductSearch);
+		
+		webElement.sendKeys(searchedProduct);
+		webElement.submit();
 		
 		return new ResultsPage();
+	}
+	
+	public CartPage clickCartButton() {
+		getDriver().findElementDynamic(selectorCart)
+				.click();
+		
+		return new CartPage();
+	}
+	
+	public void closeBrowser() {
+		getDriver().close();
 	}
 	
 }
